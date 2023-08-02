@@ -2,9 +2,17 @@
         margin: 0;
         padding: 0;
         box-sizing: border-box;
+        font-family: 'Times New Roman', Times, serif;
 }
 
-
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+   
+}
 
 
 table{
@@ -14,13 +22,14 @@ table{
    margin-right: auto;
    margin-top: 10px;
    border-collapse: collapse;
-   /* border: 3px solid green; */
-   /* display: none; */
-   /* overflow: scroll; */
+  
+   
 
 }
 
-table tr td .table-link{
+table tr td .table-link:link,table tr td .table-link:visited{
+    
+    padding: 9px;
     color: rgb(7, 101, 209);
     text-align: center;
     text-transform: capitalize;
@@ -29,9 +38,81 @@ table tr td .table-link{
 
     
 }
+
+table tr td .table-link:hover,table tr td .table-link:active{
+   
+    background-color: blue;
+    color: white;
+}
+
+
 table tr td img{
     object-fit: cover;
+
 }
 .center{
+   
     text-align: center;
+}
+.footer{
+    display: flex;
+    gap:5pc;
+    justify-content: center;
+    align-items: center;
+}
+.sitemap{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sitemap a{
+    text-decoration: none;
+    margin-top: 10px;
+}
+.socials{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.socials a{
+    text-decoration: none;
+    margin-top: 10px;
+
+}
+.fa-facebook{
+    margin-right: 10px;
+    font: size 32px !important;;
+}
+.fa-linkedin{
+    margin-right: 10px;
+    font: size 32px !important;;
+}
+.fa-whatsapp{
+    margin-right: 10px;
+    font: size 32px !important;;
+}
+.fa-youtube{
+    margin-right: 10px;
+    font: size 32px !important;;
+}
+.dev-disc{
+   text-align: center;
+   margin-top: 20px;
+   margin-bottom: 20px;
+}
+.developer{
+    margin-left: 10px;
+    margin-right: 10px;
+    text-decoration: none;
+   
+}
+@media screen and (max-width:720px){
+    table{
+        overflow-x: visible;
+        overflow-y: visible;
+    }
 }
