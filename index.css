@@ -48,11 +48,35 @@ table tr td .table-link:hover,table tr td .table-link:active{
 
 table tr td img{
     object-fit: cover;
+    position: relative;
+    opacity:1;
 
+}
+.text-overlay{
+    position: absolute;
+    top: 70px;
+    left: 50%;
+    transform: translatex(-40%);
+    z-index: 1;
+    text-align: justify;
+    color: white;
 }
 .center{
    
     text-align: center;
+}
+.btn-login{
+    display: block;
+    width: 80%;
+    margin: 5px auto;
+    background-color: rgb(245, 239, 239);
+    height: 30px;
+    border: none;
+    font-size: 16px;
+    text-align: center;
+    /* vertical-align: middle; */
+    border-radius: 5px;
+
 }
 .footer{
     display: flex;
@@ -114,5 +138,20 @@ table tr td img{
     table{
         overflow-x: visible;
         overflow-y: visible;
+    }
+}
+@media screen and (max-width:576px){
+    table{
+        overflow-x: visible;
+        overflow-y: visible;
+    }
+    .btn-login{
+        display: none;
+    }
+    .footer{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: aqua;
     }
 }
