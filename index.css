@@ -41,7 +41,7 @@ table tr td .table-link:link,table tr td .table-link:visited{
 
 table tr td .table-link:hover,table tr td .table-link:active{
    
-    background-color: blue;
+    background-color:steelblue;
     color: white;
 }
 
@@ -90,14 +90,35 @@ table tr td img{
     text-align: center;
       color: #fff;
 }
+.showcase-text{
+    font-size: 2rem;
+}
+.learn-more{
+    display: block;
+    width: 20%;
+    margin: 30px auto;
+    font-size: 1rem;
+
+    border: none;
+    border-radius: 8px;
+    height: 30px;
+    color: #fff;
+    background-color: rgba(70, 131, 180, 0.877);
+
+}
 .row-mod{
     background-color: black;
+}
+.bg{
+    background-color: steelblue;
+    
 }
 .footer{
     display: flex;
    gap:4pc;
     justify-content: space-around;
     align-items: center;
+    
 }
 .sitemap{
     display: flex;
@@ -108,11 +129,12 @@ table tr td img{
 .sitemap a{
     text-decoration: none;
     margin-top: 10px;
+    color: #fff;
 }
 .socials{
     padding-top: 65px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
     text-align: center;
@@ -121,23 +143,28 @@ table tr td img{
     text-decoration: none;
     margin-top: 10px;
     margin-right: 10px;
+    color: #fff;
 
 }
 .fa-facebook{
     margin-right: 10px;
-    font: size 50px !important;;
+    font: size 50px !important;
+    color: #fff;
 }
 .fa-linkedin{
     margin-right: 10px;
-    font: size 50px !important;;
+    font: size 50px !important;
+    color: #fff;
 }
 .fa-whatsapp{
     margin-right: 10px;
-    font: size 50px !important;;
+    font: size 50px !important;
+    color: #fff;
 }
 .fa-youtube{
     margin-right: 10px;
-    font: size 50px !important;;
+    font: size 50px !important;
+    color: #fff;
 }
 .dev-disc{
    text-align: center;
@@ -166,9 +193,12 @@ table tr td img{
     }
     .footer{
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background-color: aqua;
+        justify-content: start;
+        align-items: start;
+        /* background-color: aqua; */
+        overflow-x: visible;
+padding: 10px;
+
     }
     .socials{
        flex-direction: column;
@@ -176,5 +206,12 @@ table tr td img{
        justify-content: center;
        align-items: center;
        padding-top: 10px;
+    }
+    .learn-more{
+       
+        width: 50%;
+        margin: 0px auto;
+        height: 30px;
+    
     }
 }
