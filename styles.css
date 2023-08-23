@@ -1,0 +1,327 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  background-color: rgba(0, 10, 36, 0.644);
+  position: relative;
+  padding: 2rem;
+  width: 100%;
+  font-family: "Roboto Mono", monospace;
+  height: fit-content;
+}
+.header {
+  background-color: rgba(0, 10, 36, 0);
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  margin-bottom: 1rem;
+  width: 100%;
+  color:rgba(255, 255, 255, 0.733);
+  font-weight: 500;
+  padding-bottom: 10px;
+}
+
+.logo-and-title {
+  width: 100%;
+  padding: 2rem;
+  height: auto;
+  position: relative;
+  display: flex;
+  flex-direction: left;
+  margin: 1rem;
+  /* border: 6px solid greenyellow; */
+}
+.logo-and-title h2 {
+  padding-top: 1rem;
+  margin-left: 0.3rem;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 1rem;
+  /* border: 6px solid rgb(77, 10, 233); */
+}
+.navbar ul {
+  list-style-type: none;
+}
+.navbar ul li {
+  float: left;
+  margin-top: 20px;
+  text-align: center;
+  padding: 16px 20px;
+}
+.navbar ul li a:link,
+.navbar ul li a:visited {
+  text-align: center;
+  text-decoration: none;
+  margin-right: 10px;
+  padding: 16px 20px;
+
+  display: inline-block;
+  color:rgba(255, 255, 255, 0.733);
+
+  text-transform: capitalize;
+}
+.navbar ul li a:hover {
+  background-color: rgb(2, 65, 23);
+  color:rgba(255, 255, 255, 0.733);
+
+}
+.active {
+  background-color: rgb(2, 65, 23);
+  color: rgba(240, 248, 255, 0.856);
+}
+.btn-login {
+  width: 120px;
+  height: 40px;
+  
+  text-align: center;
+  border-radius: 50px;
+  border: none;
+  background-color: rgb(2, 65, 23);
+  color:rgba(255, 255, 255, 0.733);
+  margin-top: 12px;
+  text-transform: capitalize;
+}
+.btn-login:hover {
+}
+.btn-login a {
+  text-align: center;
+  padding: 0 !important;
+  text-transform: capitalize;
+  font-family: "Roboto Mono", monospace;
+  text-align: center;
+}
+
+/* main */
+main {
+  width: 100%;
+  /* background-color: white; */
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+  /* border: #c11e1e solid 7px; */
+  margin: 1rem;
+}
+main .content {
+  /* background-color: rgb(12, 219, 219); */
+  border: black 1px solid;
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+footer {
+  width: 100%;
+  position: relative;
+  /* background-color: #f2f2f2; */
+  text-align: center;
+  padding: 1rem 0rem;
+  height: auto;
+  margin: 1rem 0rem 1rem 1rem;
+  /* border: black 8px solid; */
+}
+footer .row {
+  /* background-color: rgb(241, 248, 241); */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  
+}
+footer .row .column a {
+  color:rgba(255, 255, 255, 0.733);
+
+  font-size: large;
+  padding: 1rem;
+  display: block;
+}
+/* form */
+.form-container {
+  width: 60%;
+  background-color: rgba(128, 128, 128, 0.979);
+  padding: 1rem;
+  font-family: "Times New Roman", Times, serif;
+  border-radius: 5px;
+  margin: 4rem;
+  height: fit-content;
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+.form-container h1 {
+  color:rgba(255, 255, 255, 0.733);
+  
+
+  text-transform: capitalize;
+  font-weight: 900;
+}
+.form-container h4 {
+  color:rgba(255, 255, 255, 0.733);
+  
+
+  text-transform: capitalize;
+  font-weight: 900;
+}
+.form-container hr {
+  height: 2px;
+  margin-top: 0.4rem;
+  background-color:rgba(255, 255, 255, 0.733);
+
+  outline: none;
+  border: none;
+}
+.form-container form{
+  width: 100%;
+}
+.input-field {
+  position: relative;
+  display: flex;
+  height: 2.5rem;
+  flex-direction: row;
+  justify-content: right;
+  align-content: space-between;
+}
+.input-field-special {
+  position: relative;
+  display: inline-block;
+  flex-direction: row;
+  font-size: 18px;
+  justify-content: center;
+  align-content: space-between;
+}
+
+.error-and-label {
+  width: 60%;
+  display: block;
+  margin-right: 1rem;
+  text-align: end;
+  height: auto;
+}
+.input-field .error-and-label label {
+  position: relative;
+  font-size: 16px;
+  color:rgba(255, 255, 255, 0.733);
+
+  font-weight: 900 !important;
+  text-transform: capitalize;
+}
+.input-field input[type="text"],
+input[type="number"],
+input[type="email"],
+select,
+input[type="tel"] {
+  width: 40%;
+  height: 40px;
+  border-radius: 15px;
+  padding: 0.2rem;
+}
+.one-comp input[type="radio"],
+input[type="checkbox"] {
+  width: 50px;
+}
+.one-comp {
+  display: flex;
+  margin: 0.5rem;
+  padding: 0.3rem;
+  font-size: 20px;
+}
+.special label {
+  width: 20%;
+  padding-top: 0.4rem;
+  font-size: 24px;
+  font-weight: bolder;
+  color:rgba(255, 255, 255, 0.733);
+  
+
+}
+.input-field label{
+  color:rgba(255, 255, 255, 0.733);
+}
+.message-box {
+  margin-top: 1rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  /* gap: 3rem; */
+}
+.input-field-special label{
+  color:rgba(255, 255, 255, 0.733);
+}
+.message-box textarea {
+  width: 80%;
+  border-radius: 5px;
+  padding: 0.5rem;
+  position: relative;
+  color: blue;
+  width: 100%;
+  min-width: 214px;
+  height: 100px;
+  color:rgba(8, 2, 2, 0.651);
+  outline: none;
+}
+.btn-space{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+}
+.form-btn{
+  background-color: rgb(2, 65, 23);
+  color:rgba(255, 255, 255, 0.733);
+
+  width: 150px;
+  height: 40px;
+  text-align: center;
+  border: none;
+  border-radius: 20px;
+}
+.form-btn:hover{
+  background-color: rgba(0, 128, 0, 0.699);
+
+}
+@media screen and (max-width: 650px) {
+  .navbar {
+    flex-direction: column;
+  }
+  .navbar ul {
+    align-self: flex-start;
+  }
+  .navbar ul li {
+    float: none;
+    width: 100%;
+    text-align: left;
+  }
+  .navbar ul li a {
+    display: block;
+  }
+  .btn-space {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  .btn-group .form-btn {
+    width: 100%;
+  }
+  .message-box{
+    flex-direction: column;
+  }
+  footer .row{
+    flex-direction: column;
+  }
+  .footer .column{
+    border-bottom: 2px solid black;
+  }
+  .footer .column:last-child{
+   
+    border-bottom: none;
+  }
+}

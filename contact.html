@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive navigation bar</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <!-- header -->
+      <header class="header">
+        <!-- logo and title starts here -->
+        <div class="logo-and-title">
+          <img
+          src="/MOP/images/logo.png"
+            alt="logo image "
+            width="64"
+            height="64"
+          />
+          <h2>Your Title as per instruction should come here</h2>
+        </div>
+
+        <!-- logo and website titles ends here -->
+        <nav class="navbar">
+          <ul>
+            <li><a href="index.html"><i class="fa fa-home" ></i>Home</a></li>
+            <li><a href="#"><i class="fa fa-address-card" ></i>About</a></li>
+            <li><a href="contact.html" ><i class="fa fa-address-book" ></i>Contact</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#"><i class="fa fa-product-hunt" ></i>products</a></li>
+            <!-- <li><a href="#">FAQs</a></li>
+            <li><a href="#">support</a></li>
+            <li><a href="#">Blog</a></li> -->
+            <li>
+              <button class="btn-login">
+                <a href=""><i class="fa fa-sign-in" ></i>Login</a>
+              </button>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main class="main">
+        <div class="form-container">
+          <h1>Contact Us</h1>
+          <h4>Please complete the Form Below</h4>
+          <hr />
+          <br /><br />
+          <form id="contact-form" class="form">
+            <div class="input-field">
+              <div class="error-and-label">
+                <label for="name">Name </label>
+                <div class="error"></div>
+              </div>
+              <input
+                type="text"
+                placeholder="Peterson Keneth"
+                name="name"
+                id="fname"
+                required
+              />
+            </div>
+            <br />
+
+            <div class="input-field">
+              <div class="error-and-label">
+                <label for="email">Email </label>
+                <div class="error"></div>
+              </div>
+              <input
+                type="email"
+                placeholder="example@gmail.com"
+                name="email"
+                id="email"
+                required
+              />
+            </div>
+            <br />
+
+            <div class="input-field">
+              <div class="error-and-label">
+                <label for="tel">Telephone </label>
+                <div class="error"></div>
+              </div>
+              <input
+                type="tel"
+                maxlength="10"
+                placeholder="00-00-00-00-00"
+                name="tel"
+                id="tel"
+              />
+            </div>
+            <br />
+
+            <div class="input-field">
+              <div class="error-and-label">
+                <label for="website">Website</label>
+                <div class="error"></div>
+              </div>
+              <input
+                type="text"
+                placeholder="https://www.example.com"
+                name="website"
+                id="website"
+                required
+              />
+            </div>
+            <br />
+
+            <div class="input-field">
+              <label>Which option best describes your current role?</label>
+              <select id="dropdown" required>
+                <option hidden>Select current role</option>
+                <option value="Student">Student</option>
+                <option value="Full Time Job">Full Time Job</option>
+                <option value="Full Time Learner">Full Time Learner</option>
+                <option value="Prefer not to say">Prefer not to say</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+            <br />
+
+            <div class="input-field-special">
+              <label> Gender </label> <br />
+              <br />
+              <div class="one-comp">
+                <input type="radio" name="gender" value="Male" required />
+                <label for="Male">Male</label>
+              </div>
+              <div class="one-comp">
+                <input type="radio" name="gender" value="Female" required />
+                <label for="Female">Female</label>
+              </div>
+
+              <div class="one-comp">
+                <input type="radio" name="gender" value="Others" required />
+                <label for="other "> Others</label>
+              </div>
+            </div>
+            <br />
+
+            <div class="input-field-special">
+              <div>
+                <label>
+                  What would you like to see improved? (Check all that apply)<br />
+                </label>
+              </div>
+              <br />
+              <div class="one-comp">
+                <input type="checkbox" value="Products" />
+                <label for="Products"> Products</label> 
+              </div>
+
+              <br />
+              <div class="one-comp">
+                <input type="checkbox" value="Prices" />
+                <label for="Prices"> Prices</label>
+              </div>
+
+              <br />
+              <div class="one-comp">
+                <input type="checkbox" value="faqs" />
+                <label for="'Faqs">FAQs</label>
+              </div>
+              <br />
+              <div class="one-comp">
+                <input type="checkbox" value="Blog" />
+                <label for="'Blog">Blog</label>
+              </div>
+            </div>
+
+            <br />
+
+            <div class="message-box">
+              <div class="special">
+                <label for="Message">Message</label>
+                <div class="error"></div>
+              </div>
+
+              <br />
+              <div>
+                <textarea
+                  name="text"
+                  rows="4"
+                  cols="40"
+                  placeholder="Write something to us"
+                  required
+                ></textarea>
+              </div>
+            </div>
+            <br />
+
+            <div class=" btn-space">
+              <input
+                type="submit"
+                value="SEND"
+                id="submit"
+                class="form-btn"
+                required
+              />
+              <input
+                type="reset"
+                value="Reset"
+                id="reset"
+                class="form-btn"
+                required
+              />
+            </div>
+          </form>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="row">
+          <div class="column">
+            <a href="#">Home</a>
+            <a href="#">Price</a>
+            <a href="#">Partnes</a>
+            <a href="#">Blog</a>
+          </div>
+          <div class="column">
+            <a href="#">Home</a>
+            <a href="#">Price</a>
+            <a href="#">Partnes</a>
+            <a href="#">Blog</a>
+          </div>
+          <div class="column">
+            <a href="#">Home</a>
+            <a href="#">Price</a>
+            <a href="#">Partnes</a>
+            <a href="#">Blog</a>
+          </div>
+          <div class="column">
+            <a href="#">Home</a>
+            <a href="#">Price</a>
+            <a href="#">Partnes</a>
+            <a href="#">Blog</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
